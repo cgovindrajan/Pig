@@ -1,0 +1,11 @@
+Input data and filter out unpopular songs or songs without lat/long localization (relation Filtered). 
+Then I produce all pairs of different songs (relation Different) and calculate distance between their artists l
+ocalization (relation Distanced). Next, for each song, I calculate the average distance between the song’s artist 
+localization and all other songs’ artists localization (relation AvgDistanced). Now, I can limit my records to take 
+only the most interesting results. Firstly, I want to have only the hottest song for a given location (relation Popular). 
+Then I remain only a small number of songs with the lowest average distance (relation Limited) 
+and finally store output results in the the format that will be useful for further visualization 
+with Google Maps (relation Displayed).
+
+
+DataSet Location : http://labrosa.ee.columbia.edu/millionsong/
